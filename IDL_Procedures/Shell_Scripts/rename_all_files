@@ -1,0 +1,8 @@
+# want to change the file name that has been wrongly entered 
+# Sambid Wasti, mainly for the polarization
+for f in *deg*FM104*
+do
+g=${f/Cs137/Co57}
+echo $g
+mv './'$f $g
+done

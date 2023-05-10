@@ -1,0 +1,8 @@
+# CONVERTS THE FILES TO PDFi
+# Sambid Wasti
+for f in FM*Anode*
+do
+g=${f%.ps*}
+ps2pdf $f $g.pdf
+rm $f
+done
